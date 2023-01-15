@@ -173,7 +173,6 @@ let Ourskills = document.querySelector(".skills h2");
 window.onscroll = function () {
   // Skills offset Top
   let SkillsOffsetTop = Ourskills.offsetTop;
-  this.console.log(SkillsOffsetTop);
   // Skills outer height
   let SkillsOuterHeight = Ourskills.offsetHeight;
   // window Height
@@ -181,7 +180,6 @@ window.onscroll = function () {
   //window ScrollTop
   let WindowScrollTop = this.pageYOffset;
   if (WindowScrollTop >= SkillsOffsetTop + SkillsOuterHeight - WindowHeight) {
-    this.console.log("Skill Section Reached");
     let allSkills = document.querySelectorAll(
       ".skills .skill-box .skill-progress span"
     );
